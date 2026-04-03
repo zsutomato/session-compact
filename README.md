@@ -127,9 +127,21 @@ session-compact skill 已创建完成，无未完成任务。
 
 ## 安装 / Installation
 
-将 skill 目录放到 `~/.workbuddy/skills/session-compact/`，重启 WorkBuddy 即可。
+**方式一：skillhub（推荐）**
 
-*Place the skill directory at `~/.workbuddy/skills/session-compact/` and restart WorkBuddy.*
+```bash
+skillhub install session-compact
+```
+
+**方式二：手动安装 / Manual install**
+
+```bash
+curl -L https://github.com/zsutomato/session-compact/releases/latest/download/session-compact.zip \
+  -o /tmp/session-compact.zip && \
+unzip /tmp/session-compact.zip -d ~/.workbuddy/skills/
+```
+
+安装后重启 WorkBuddy 即可。*Restart WorkBuddy after installation.*
 
 ```
 ~/.workbuddy/skills/session-compact/
