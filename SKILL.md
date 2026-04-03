@@ -1,6 +1,6 @@
 ---
 name: session-compact
-description: "This skill should be used when the user's context window is running low and they need to restart the conversation, OR when the user explicitly says they are about to start a new session or end the current session (e.g. 我准备新开会话了, 我要开新对话了, 我要重启一下, 新建个对话, 结束会话, 今天就到这里, 先这样, 我要下线了, 收工). It orchestrates a three-tier memory compression (Micro, Session, Full Archive) inspired by Claude Code auto-compact design, cleans up noisy logs, distills key facts into MEMORY.md, and generates a ready-to-paste briefing for the new session. Trigger phrases: 上下文快满了, context 告急, 要重启会话, session compact, 帮我整理记忆再重启, 我准备新开会话, 结束会话, 今天就到这里, 先这样, 收工, 我要下线了."
+description: "This skill should be used when the user's context window is running low and they need to restart the conversation, OR when the user explicitly says they are about to start a new session, end, or close the current session (e.g. 我准备新开会话了, 我要开新对话了, 我要重启一下, 新建个对话, 结束会话, 关闭会话, 准备关闭会话, 今天就到这里, 先这样, 我要下线了, 收工, 就这样吧, 暂时告一段落). It orchestrates a three-tier memory compression (Micro, Session, Full Archive) inspired by Claude Code auto-compact design, cleans up noisy logs, distills key facts into MEMORY.md, and generates a ready-to-paste briefing for the new session. Trigger phrases: 上下文快满了, context 告急, 要重启会话, session compact, 帮我整理记忆再重启, 我准备新开会话, 结束会话, 关闭会话, 准备关闭会话, 今天就到这里, 先这样, 收工, 我要下线了, 就这样吧, 暂时告一段落."
 ---
 
 # Session Compact Skill
@@ -22,7 +22,7 @@ description: "This skill should be used when the user's context window is runnin
 - 用户说「上下文快满了」「context 告急」「要开新对话」「session compact」
 - 用户说「帮我整理一下记忆再重启」「压缩一下 memory 文件」
 - **用户明确表示准备新开会话**，例如：「我准备新开一个会话了」「我要开新对话了」「我要重启一下」「新建个对话」「我去开个新 session」等，即使没有提到压缩或记忆
-- **用户明确表示结束当前会话**，例如：「结束会话」「今天就到这里」「先这样」「收工」「我要下线了」「就这样吧」「暂时告一段落」等
+- **用户明确表示结束或关闭当前会话**，例如：「结束会话」「关闭会话」「准备关闭会话」「今天就到这里」「先这样」「收工」「我要下线了」「就这样吧」「暂时告一段落」等
 - 对话轮次较多，AI 开始重复历史信息或遗忘早期决策
 - 用户主动要求在重启前做好准备
 
