@@ -1,0 +1,10 @@
+# WorkBuddy 工作记忆（本地专属，不入库）
+.workbuddy/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
